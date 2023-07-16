@@ -6,7 +6,7 @@ import json
 
 sentence = str(input('Sentence to create a playlist from? '))
 sentence = sentence.replace("-", " ")
-sentence = re.sub('[!.,"?()“”‘’]','',sentence) #replaces punctuation with nothing as i've seen the program have trouble with them before
+sentence = re.sub('[!.,"?()“”‘’\'\"`+-=_@#<>£$%^&*]','',sentence) #replaces punctuation with nothing as i've seen the program have trouble with them before
 converted_sentence = sentence.lower().split()
 
 results = []
